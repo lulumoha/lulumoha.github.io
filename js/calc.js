@@ -24,3 +24,8 @@ $(document).ready(function() {
   $("#output").text(result);
 });
 });
+
+$(document).ready(function(){
+    $("#output").css("text-align","center",);
+
+  });
