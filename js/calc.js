@@ -59,6 +59,16 @@ $(document).ready(function() {
 });
 });
 
+$(document).ready(function() {
+  $("form#modulus").submit(function(event) {
+ event.preventDefault();
+  var number1 = parseInt($("#modulus1").val());
+  var number2 = parseInt($("#modulus2").val());
+  var result = modulus(number1, number2);
+  $("#output").text(result);
+});
+});
+
 $(document).ready(function(){
     $("#output").css("text-align","center",);
 
