@@ -14,6 +14,10 @@ var divide = function(number1, number2){
   return number1 / number2;
 };
 
+var modulus = function(number1, number2){
+  return number1 % number2;
+};
+
 // Everything below this line is user interface (or front-end) logic:
 $(document).ready(function() {
   $("form#add").submit(function(event) {
@@ -24,6 +28,17 @@ $(document).ready(function() {
   $("#output").text(result);
 });
 });
+
+$(document).ready(function() {
+  $("form#subtract").submit(function(event) {
+ event.preventDefault();
+  var number1 = parseInt($("#subtract1").val());
+  var number2 = parseInt($("#subtract2").val());
+  var result = subtract(number1, number2);
+  $("#output").text(result);
+});
+});
+
 
 $(document).ready(function(){
     $("#output").css("text-align","center",);
